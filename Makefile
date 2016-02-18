@@ -18,10 +18,10 @@ bulk-test: $(SRC_DIR)/bulk-test.cpp
 	$(CPP) $(SRC_DIR)/bulk-test.cpp $(C_FLAGS) $(L_FLAGS) -o $(BIN_DIR)/bulk-test
 
 FANNhcr: $(SRC_DIR)/FANNhcr.cpp
-	$(CPP) $(SRC_DIR)/FANNhcr.cpp $(C_FLAGS) $(L_FLAGS) -o $(BIN_DIR)/FANNhcr.cpp
+	$(CPP) $(SRC_DIR)/FANNhcr.cpp $(C_FLAGS) $(L_FLAGS) -o $(BIN_DIR)/FANNhcr
 
 RTT: $(SRC_DIR)/RTT.cpp
-	$(CPP) $(SRC_DIR)/RTT.cpp $(C_FLAGS) $(GTK) $(L_FLAGS) -o $(BIN_DIR)/RTT.cpp -w
+	$(CPP) $(SRC_DIR)/RTT.cpp $(C_FLAGS) $(GTK) $(L_FLAGS) -o $(BIN_DIR)/RTT -w
 
 clean:
 	rm -rf test train bulk-test FANNhcr RTT
