@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#define PROG_VERSION 0.1
+#define PROG_VERSION 1.0
 #define print(x) cout << x << endl;
 
 /* variabili globali */
