@@ -11,12 +11,14 @@ The train program is simply a command-line interface that lets the user choose s
 # Test
 To test a single pattern the user must simply run the test program passing some parameters (which are specified in the help), the program randomly select a pattern, present it to the net and decode the output comparing it to the respective expected output.
 
+![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/test.png)
 # Bulk-test
 It is a CLI program that let the user test the accuracy of the network over many examples:
 The user simply has to specify the test set, the network to use and the number of examples to check. The program then read randomly from the test file N examples for each letter, giv them to the network, decode the output, compare it with the expected and draws some statistics like the percentage of single letters guessed right etc...
 
+![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/bulk-test.png)
 # Real Time Test
 This is a GUI program that lets the user choose a (trained) network, draw a letter on the screen and then encodes it according to the [FANN input format](http://leenissen.dk/fann/html/files/fann_train-h.html).
 It then present the resulting input to the network, receive the output, order the results in descending order and show them to the user.
 
-
+![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/RTT.png)
