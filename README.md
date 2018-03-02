@@ -30,13 +30,13 @@ You should now have the binaries and can (probably) use the RTT program. If you 
         * off neurons --> 0.1
         * on neurons --> 0.9
         
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/training_set_file.png)
+![ScreenShot](/Screenshots/training_set_file.png)
 
 * FANN format for test files:
     * first line the encoded image
     * second line the label (character)
 
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/test_set_file.png)
+![ScreenShot](/Screenshots/test_set_file.png)
 
 ## Introduction
 Using the [FANN library](http://leenissen.dk/fann/wp/) we implemented a multilayer perceptron that can recognize handwritten capital letters.
@@ -48,18 +48,18 @@ After a fair amount of testing we decided to go for a configuration that has 90 
 ## Train
 The train program is simply a command-line interface that lets the user choose some key-parameters like the training file, the network name etc... and starts to train the network (some parameters like the number of hidden neurons, the learning rate etc... are hardcoded)
 
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/train.png)
+![ScreenShot](/Screenshots/train.png)
 ## Test
 To test a single pattern the user must simply run the test program specifying the test-set file and the network to test, the program randomly select a pattern, present it to the net and decode the output comparing it to the respective expected output.
 
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/test.png)
+![ScreenShot](/Screenshots/test.png)
 ## Bulk-test
 It is a CLI program that let the user test the accuracy of the network over many examples:
 The user simply has to specify the test set, the network to use and the number of examples to check. The program then read randomly from the test file N examples for each letter, submit them to the network, decode the output, compare it with the expected and draws some statistics like the percentage of single letters guessed right etc...
 
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/bulk-test.png)
+![ScreenShot](/Screenshots/bulk-test.png)
 ## Real Time Test
 This is a GUI program that lets the user choose a (trained) network, draw a letter on the screen and then encodes it according to the [FANN input format](http://leenissen.dk/fann/html/files/fann_train-h.html).
 It then present the resulting input to the network, receive the output, order the results in descending order and show them to the user.
 
-![alt tag](https://raw.githubusercontent.com/MichelangeloDiamanti/hcr/master/Screenshots/RTT.png)
+![ScreenShot](/Screenshots/RTT.png)
