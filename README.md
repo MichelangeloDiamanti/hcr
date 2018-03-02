@@ -11,7 +11,7 @@
 1. clone the repo
 2. make sure that your directory looks like this (you may have to create some empty dirs):
 
-![ScreenShot](/screenshots/tree-dirs.png)
+![ScreenShot](/Screenshots/tree-dirs.png)
 
 3. make
 
